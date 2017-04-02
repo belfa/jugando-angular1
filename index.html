@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app="holamundo" >
+<html ng-app="ocultar" >
     <head>
         <meta charset="utf-8">
         <title>AngularJS</title>
@@ -12,9 +12,9 @@
 
     </head>
     <body>
-        <h1> {{ "Mi Aplicación AngularJS # " + (1+1) |uppercase }} </h1>
+        <h1 ng-bind=" 'Resultado:' + (1+1) " ng-cloak class="ng-cloak"> cargando ... </h1>
         <script>
-            var miAppAngular = angular.module( 'holamundo', [] );
+            var miAppAngular = angular.module( 'ocultar', [] );
         </script>
     </body>
 </html>
